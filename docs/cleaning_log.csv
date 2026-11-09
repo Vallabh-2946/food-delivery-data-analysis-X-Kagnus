@@ -1,0 +1,8 @@
+issue,affected_column,affected_rows,action_taken,reason
+Initial Raw Inspection,All Columns,45584,Loaded CSV and inspected data types, missing values, and coordinate ranges.,Baseline profile establishment.
+Missing Value Imputation,Delivery_person_Age,1854,Filled missing values with median age (29.5),Preserves distribution without skewing data.
+Missing Value Imputation,Delivery_person_Ratings,1908,Filled missing ratings with median rating (4.7),Maintains standard rating baseline.
+Missing Value Imputation,multiple_deliveries,993,Filled missing values with mode (1.0),Standard operational default.
+Categorical Missing Imputation,Weather_conditions, Road_traffic_density, City, Festival,1731, 616, 601, 1200, 228,Filled missing categorical fields with 'Unknown' and Festival with 'No',Ensures records are not dropped while flagging missing categories.
+Coordinate Outlier Filtering,Restaurant_latitude/longitude, Delivery_location_latitude/longitude,4071,Filtered rows to retain only coordinates within valid Indian boundaries (Lat 6-37, Lon 68-97),Removes erroneous GPS data and corrupt records.
+Feature Engineering,Distance_km,41513,Calculated direct great-circle distance between restaurant and drop-off using Haversine formula,Provides necessary distance metric for operational analysis.
