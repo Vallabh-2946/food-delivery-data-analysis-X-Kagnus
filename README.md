@@ -39,3 +39,9 @@ food-delivery-data-analysis/
 * **Initial Profile:** Loaded 45,584 raw delivery records across 20 operational columns.
 * **Data Quality Actions:** Addressed missing values via median and categorical mode/unknown imputations, filtered out 4,071 coordinate outliers falling outside Indian geographic boundaries, and engineered the direct `Distance_km` feature using the Haversine formula.
 * **Cleaned Output:** Finalized dataset contains 41,513 reliable rows stored in `data/processed/cleaned_food_delivery.csv`.
+
+## Week 2: Exploratory Data Analysis (EDA)
+* **Delivery Baseline:** Evaluated distribution metrics across 41,513 valid records (mean duration: 26.31 minutes, median: 26.0 minutes).
+* **Operational Comparisons:** Compiled comparative summary tables for road traffic density, weather conditions, and vehicle categories.
+* **Distance Analysis:** Calculated correlation and exported the initial distance-versus-duration scatter plot to `visualizations/initial_distance_vs_duration.png`.
+* **Key Observations:** Documented five number-supported operational insights.
