@@ -45,3 +45,32 @@ food-delivery-data-analysis/
 * **Operational Comparisons:** Compiled comparative summary tables for road traffic density, weather conditions, and vehicle categories.
 * **Distance Analysis:** Calculated correlation and exported the initial distance-versus-duration scatter plot to `visualizations/initial_distance_vs_duration.png`.
 * **Key Observations:** Documented five number-supported operational insights.
+## Week 3: Visualization & Interpretation
+
+In Week 3, analytical findings from the cleaned dataset were translated into five finalized, professionally styled visualizations to explain delivery-duration patterns and operational factors. All charts were generated using Python (Matplotlib and Seaborn), exported as high-resolution PNG files into the `visualizations/` folder, and accompanied by evidence-based interpretations.
+
+### Visualizations Implemented
+1. **Delivery Duration Distribution (Histogram)**
+   * **File:** `visualizations/01_delivery_duration_distribution.png`
+   * **Purpose:** Shows the overall distribution shape and central concentration of delivery durations.
+   * **Observed Pattern:** Follows a nearly normal distribution centered around a mean of 26.31 minutes and a median of 26.0 minutes, with the middle 50% falling between 19 and 32 minutes.
+
+2. **Traffic Comparison (Bar Chart)**
+   * **File:** `visualizations/02_traffic_comparison.png`
+   * **Purpose:** Compares median delivery durations across road traffic density categories.
+   * **Observed Pattern:** Median delivery times surge significantly under **Jam** conditions (31.0 minutes) compared to **Low** traffic (20.0 minutes), highlighting heavy congestion bottlenecks.
+
+3. **Weather Comparison (Bar Chart)**
+   * **File:** `visualizations/03_weather_comparison.png`
+   * **Purpose:** Compares average delivery durations across weather categories.
+   * **Observed Pattern:** **Fog** (28.99 minutes) and **Cloudy** (28.93 minutes) conditions record the longest average durations, whereas **Sunny** weather facilitates the fastest average turnaround (21.89 minutes).
+
+4. **Distance vs. Delivery Duration (Scatter Plot)**
+   * **File:** `visualizations/04_distance_vs_duration.png`
+   * **Purpose:** Evaluates the relationship between delivery distance and delivery duration.
+   * **Observed Pattern:** Displays a near-zero linear correlation coefficient (0.0235), indicating that urban preparation wait times and traffic congestion heavily override direct crow-fly travel distance.
+
+5. **Vehicle Comparison (Box Plot)**
+   * **File:** `visualizations/05_vehicle_comparison.png`
+   * **Purpose:** Compares delivery-duration distributions, central values, and outliers across vehicle types.
+   * **Observed Pattern:** **Electric scooters** and standard **scooters** exhibit tighter interquartile ranges and lower median durations (~24.0 minutes) than traditional **motorcycles** (~27.0 minutes), reflecting nimble urban maneuverability.
